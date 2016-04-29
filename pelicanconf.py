@@ -8,6 +8,10 @@ SITEURL = ''
 
 PATH = 'content'
 
+MARKUP = ('md', 'ipynb')
+
+PLUGIN_PATHS = [u'./plugins']
+
 TIMEZONE = 'Asia/Harbin'
 
 DEFAULT_LANG = u'en'
@@ -29,7 +33,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # discuss
-PLUGINS = [u"disqus_static"]
+PLUGINS = [u'ipynb.markup', u"disqus_static"]
 DISQUS_SECRET_KEY = u'pJbpiZq4oZnvBF0d8jBAJ7Gq6zgpykrQXz1cb4mu91k9RNy2o4WxBKW1aBGMD0s7'
 DISQUS_PUBLIC_KEY = u'lsFpeLT3a3mxbS1P0qlWrhpNfGTiYfXfuMPDLXkbFt2sJke6LXObY01FZSlwD5eb'
 DISQUS_SITENAME = u"rbprince"
